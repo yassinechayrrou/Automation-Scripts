@@ -21,7 +21,7 @@ Features To add:
 
 **Requirements**
 
-python python3
+python or python3
 
 **Usage**
 ```
