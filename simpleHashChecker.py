@@ -57,9 +57,9 @@ if __name__ == "__main__":
                     try:
                         if sys.argv[3]:
                             if hash_digest == sys.argv[3]:
-                                print("-> file checksum hash is identical")
+                                print("-> generated file checksum is identical to provided")
                             else:
-                                print("-> file checksum hash is Not identical please refrain from using it")
+                                print("-> generated file checksum is Not identical Be careful to use it")
                     except IndexError:
                         print("Error: Missing hash string to check")
             else:
