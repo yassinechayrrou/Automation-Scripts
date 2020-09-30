@@ -15,18 +15,16 @@ if __name__ == "__main__":
                     for byte_block in iter(lambda: f.read(1024), b""):
                         md5.update(byte_block)
                     return md5.hexdigest()
-                if hashType == "sha1":
+                elif hashType == "sha1":
                     sha1 = hashlib.sha1()
                     for byte_block in iter(lambda: f.read(1024), b""):
                         sha1.update(byte_block)
                     return sha1.hexdigest()
-                if hashType == "sha2":
+                elif hashType == "sha2":
                     sha2 = hashlib.sha256()
                     for byte_block in iter(lambda: f.read(1024), b""):
                         sha2.update(byte_block)
                     return sha2.hexdigest()
-                else:
-                    print("hash algorithm type not supported")
         except IOError:
             print("file corrupt or doesn't exist") 
 
@@ -62,6 +60,9 @@ if __name__ == "__main__":
                                 print("-> file checksum hash is Not identical please refrain from using it")
                     except IndexError:
                         print("Enter file checksum hash to verify with")
+            else:
+                print("algorithm is not supported")
+
     except IndexError:
         print("""usage:
         help: shows help and description of script
