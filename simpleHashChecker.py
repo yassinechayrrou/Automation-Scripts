@@ -26,7 +26,8 @@ if __name__ == "__main__":
                         sha2.update(byte_block)
                     return sha2.hexdigest()
         except IOError:
-            print("file corrupt or doesn't exist") 
+            print("Error: file corrupt or doesn't exist") 
+            exit()
 
     try:
         if sys.argv[1]:
@@ -51,7 +52,8 @@ if __name__ == "__main__":
                         if sys.argv[2]:
                             hash_digest = hashChecker(sys.argv[2], sys.argv[1])
                     except IndexError:
-                        print("File is missing")
+                        print("Error: File is missing")
+                        exit()
                     try:
                         if sys.argv[3]:
                             if hash_digest == sys.argv[3]:
@@ -59,9 +61,9 @@ if __name__ == "__main__":
                             else:
                                 print("-> file checksum hash is Not identical please refrain from using it")
                     except IndexError:
-                        print("Enter file checksum hash to verify with")
+                        print("Error: Missing hash string to check")
             else:
-                print("algorithm is not supported")
+                print("Algorithm is not supported")
 
     except IndexError:
         print("""usage:
