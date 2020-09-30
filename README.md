@@ -19,7 +19,8 @@ Features To add:
 - add pgp method to check if file is identical or not currently i only set md5, sha256 and sha1
 - file verification bit by bit where you get to set to files to verify if they are the same
 
-**Requirement**
+**Requirements**
+
 python python3
 
 **Usage**
