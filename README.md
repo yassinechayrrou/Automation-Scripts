@@ -17,11 +17,19 @@ Note: the default reading mode of file is 1024M -- i will provide a better solut
 Features To add:
 - mods flag to specify memory byte chunks to read when generating a hash, this is good in case for having a low memory where the script will fail if the file size is bigger then actual memory
 - add pgp method to check if file is identical or not currently i only set md5, sha256 and sha1
+- file verification bit by bit where you get to set to files to verify if they are the same
+
+**Requirement**
+python python3
 
 **Usage**
 ```
 chmod +x simpleHashChecker
 ./simpleHashChecker md5 fileName md5hashtocompare
+```
+or
+```
+python3 simpleHashChecker md5 fileName md5hashtocompare
 ```
 **help**
 ```
