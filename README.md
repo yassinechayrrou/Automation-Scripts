@@ -1,6 +1,6 @@
 # Automation-Scripts
 
-This repository presents a different programs and scripts for automation
+This repository presents a different list scripts and tools for automation
 I usually will code something i feel might be useful for me
 A list of each tool or software will be included in this readme with its purpose and problems
 
