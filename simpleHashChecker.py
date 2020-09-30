@@ -12,17 +12,17 @@ if __name__ == "__main__":
             with open(sys.argv[2], 'rb') as f:
                 if hashType == "md5":
                     md5 = hashlib.md5()
-                    for byte_block in iter(lambda: f.read(4096), b""):
+                    for byte_block in iter(lambda: f.read(1024), b""):
                         md5.update(byte_block)
                     return md5.hexdigest()
                 if hashType == "sha1":
                     sha1 = hashlib.sha1()
-                    for byte_block in iter(lambda: f.read(4096), b""):
+                    for byte_block in iter(lambda: f.read(1024), b""):
                         sha1.update(byte_block)
                     return sha1.hexdigest()
                 if hashType == "sha2":
                     sha2 = hashlib.sha256()
-                    for byte_block in iter(lambda: f.read(4096), b""):
+                    for byte_block in iter(lambda: f.read(1024), b""):
                         sha2.update(byte_block)
                     return sha2.hexdigest()
                 else:

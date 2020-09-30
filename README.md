@@ -6,7 +6,7 @@ A list of each tool or software will be included in this readme with its purpose
 
 # Tools:
 
-### SimpleHashChecker
+### 1- SimpleHashChecker
 
 This is a python script for the purpose of comparing checksum hash file provided by a file owner to the actual file checksum.
 Instead of just generating a hash to your file then comparing it letter by letter just use this script.
