@@ -91,7 +91,7 @@ if __name__ == "__main__":
                         exit()
                     try:
                         if sys.argv[3]:
-                            if hash_digest == sys.argv[3]:
+                            if hash_digest == sys.argv[3].lower():
                                 print("-> generated file checksum is identical to provided")
                             else:
                                 print("-> generated file checksum is Not identical Be careful to use it")
