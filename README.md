@@ -6,4 +6,8 @@ Basic custom made automation tools for better workflow, i include some things th
 
 | name | purpose | Folder |
 | ---- | ------- | ------- |
-| simpleHashChekcer | verifies if file's checksum is identical to provided | [simpleHashChecker]()
+| simpleHashChekcer | verifies if file's checksum is identical to provided | [simpleHashChecker](https://github.com/YassineChayrrou/Automation-Scripts/tree/master/simpleHashChecker)
+
+## Author:
+
+Yassine Chayrrou
